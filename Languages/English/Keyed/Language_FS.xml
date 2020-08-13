@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Mod Settings -->
+  <FengShui.Name>Feng Shui</FengShui.Name>
+  <FengShui.ImpFactor>Percentage equivalence of room 'Impression' [default 100%]:</FengShui.ImpFactor>
+  <FengShui.WthFactor>Percentage equivalence of room 'Wealth' [default 100%]:</FengShui.WthFactor>
+  <FengShui.SpcFactor>Percentage equivalence of room 'Space' [default 100%]:</FengShui.SpcFactor>
+  <FengShui.BtyFactor>Percentage equivalence of room 'Beauty' [default 100%]:</FengShui.BtyFactor>
+  <FengShui.ClnFactor>Percentage equivalence of room 'Cleanliness' [default 100%]:</FengShui.ClnFactor>
+  <FengShui.Tip>These settings will not apply until after RimWorld is restarted.</FengShui.Tip>
+  <FengShui.ResetDefaults>Reset values to default:</FengShui.ResetDefaults>
+  <FengShui.Reset>Reset</FengShui.Reset>
+
+</LanguageData>

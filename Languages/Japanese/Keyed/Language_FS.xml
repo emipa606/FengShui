@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Mod Settings -->
+  <FengShui.Name>Feng Shui (風水)</FengShui.Name>
+  <FengShui.ImpFactor>部屋の価値「見栄え」の基準率 [デフォルトは100%]:</FengShui.ImpFactor>
+  <FengShui.WthFactor>部屋の価値「富」の基準率 [デフォルトは100%]:</FengShui.WthFactor>
+  <FengShui.SpcFactor>部屋の価値「広さ」の基準率 [デフォルトは100%]:</FengShui.SpcFactor>
+  <FengShui.BtyFactor>部屋の価値「美しさ」の基準率 [デフォルトは100%]:</FengShui.BtyFactor>
+  <FengShui.ClnFactor>部屋の価値「清潔さ」の基準率 [デフォルトは100%]:</FengShui.ClnFactor>
+  <FengShui.Tip>変更した設定は、RimWorldを再起動するまで適用されません。</FengShui.Tip>
+  <FengShui.ResetDefaults>設定をデフォルトにリセット：</FengShui.ResetDefaults>
+  <FengShui.Reset>リセット</FengShui.Reset>
+</LanguageData>

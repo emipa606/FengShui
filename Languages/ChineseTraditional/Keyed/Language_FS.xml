@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Mod Settings -->
+  <FengShui.Name>風水</FengShui.Name>
+  <FengShui.ImpFactor>房間'印象值'當量百分比 [默認值 100%]:</FengShui.ImpFactor>
+  <FengShui.WthFactor>房間'財富值'當量百分比 [默認值 100%]:</FengShui.WthFactor>
+  <FengShui.SpcFactor>房間'空間值'當量百分比 [默認值 100%]:</FengShui.SpcFactor>
+  <FengShui.BtyFactor>房間'美觀值'當量百分比 [默認值 100%]:</FengShui.BtyFactor>
+  <FengShui.ClnFactor>房間'乾淨值'當量百分比 [默認值 100%]:</FengShui.ClnFactor>
+  <FengShui.Tip>重新啟動RimWorld後這些設置才會啟用。</FengShui.Tip>
+  <FengShui.ResetDefaults>將設定重置為默認值：</FengShui.ResetDefaults>
+  <FengShui.Reset>重啟</FengShui.Reset>
+</LanguageData>
