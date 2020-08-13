@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Feng Shui (Continued)</name>
   <packageId>Mlie.FengShui</packageId>
-  <author>peldor</author>
+  <author>pelador</author>
   <url>https://github.com/emipa606/FengShui</url>
   <supportedVersions>
     <li>1.1</li>
@@ -10,7 +10,7 @@
   </supportedVersions>
   <modDependencies />
   <loadAfter />
-  <description>Update of peldors mod
+  <description>Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2018863937
 
 [img]https://i.imgur.com/GYswkZ7.png[/img]
