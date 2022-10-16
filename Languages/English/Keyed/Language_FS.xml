@@ -10,4 +10,5 @@
   <FengShui.Tip>These settings will not apply until after RimWorld is restarted.</FengShui.Tip>
   <FengShui.ResetDefaults>Reset values to default:</FengShui.ResetDefaults>
   <FengShui.Reset>Reset</FengShui.Reset>
+  <FengShui.CurrentModVersion>Installed mod-version: {0}</FengShui.CurrentModVersion>
 </LanguageData>
