@@ -7,10 +7,10 @@ internal static class FS_Initializer
 {
     static FS_Initializer()
     {
-        LongEventHandler.QueueLongEvent(Setup, "LibraryStartup", false, null);
+        LongEventHandler.QueueLongEvent(setup, "LibraryStartup", false, null);
     }
 
-    public static void Setup()
+    private static void setup()
     {
         var allDefs = DefDatabase<RoomStatDef>.AllDefsListForReading;
         checked
@@ -58,14 +58,14 @@ internal static class FS_Initializer
                 var list = RSD.scoreStages;
                 if (list.Count > 0)
                 {
-                    foreach (var RSSS in list)
+                    foreach (var rsss in list)
                     {
-                        if (!(RSSS.minScore > 0f) || factor == 100f)
+                        if (!(rsss.minScore > 0f) || factor == 100f)
                         {
                             continue;
                         }
 
-                        RSSS.minScore = ConvertScore(RSSS.minScore, factor);
+                        rsss.minScore = convertScore(rsss.minScore, factor);
                         count++;
                     }
                 }
@@ -84,7 +84,7 @@ internal static class FS_Initializer
         }
     }
 
-    public static float ConvertScore(float score, float factor)
+    private static float convertScore(float score, float factor)
     {
         return score / (factor / 100f);
     }

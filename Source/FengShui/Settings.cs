@@ -15,54 +15,54 @@ public class Settings : ModSettings
 
     public static float ClnFactor = 100f;
 
-    public void DoWindowContents(Rect canvas)
+    public static void DoWindowContents(Rect canvas)
     {
-        var listing_Standard = new Listing_Standard { ColumnWidth = canvas.width };
-        listing_Standard.Begin(canvas);
+        var listingStandard = new Listing_Standard { ColumnWidth = canvas.width };
+        listingStandard.Begin(canvas);
         var gap = 12f;
-        listing_Standard.Gap(gap);
+        listingStandard.Gap(gap);
         var upperlimit = 200f;
         var lowerlimit = 50f;
         checked
         {
-            listing_Standard.Label("FengShui.ImpFactor".Translate() + "  " + (int)ImpFactor);
-            ImpFactor = (int)listing_Standard.Slider((int)ImpFactor, lowerlimit, upperlimit);
-            listing_Standard.Gap(gap);
-            listing_Standard.Label("FengShui.WthFactor".Translate() + "  " + (int)WthFactor);
-            WthFactor = (int)listing_Standard.Slider((int)WthFactor, lowerlimit, upperlimit);
-            listing_Standard.Gap(gap);
-            listing_Standard.Label("FengShui.SpcFactor".Translate() + "  " + (int)SpcFactor);
-            SpcFactor = (int)listing_Standard.Slider((int)SpcFactor, lowerlimit, upperlimit);
-            listing_Standard.Gap(gap);
-            listing_Standard.Label("FengShui.BtyFactor".Translate() + "  " + (int)BtyFactor);
-            BtyFactor = (int)listing_Standard.Slider((int)BtyFactor, lowerlimit, upperlimit);
-            listing_Standard.Gap(gap);
-            listing_Standard.Label("FengShui.ClnFactor".Translate() + "  " + (int)ClnFactor);
-            ClnFactor = (int)listing_Standard.Slider((int)ClnFactor, lowerlimit, upperlimit);
-            listing_Standard.Gap(gap);
+            listingStandard.Label("FengShui.ImpFactor".Translate() + "  " + (int)ImpFactor);
+            ImpFactor = (int)listingStandard.Slider((int)ImpFactor, lowerlimit, upperlimit);
+            listingStandard.Gap(gap);
+            listingStandard.Label("FengShui.WthFactor".Translate() + "  " + (int)WthFactor);
+            WthFactor = (int)listingStandard.Slider((int)WthFactor, lowerlimit, upperlimit);
+            listingStandard.Gap(gap);
+            listingStandard.Label("FengShui.SpcFactor".Translate() + "  " + (int)SpcFactor);
+            SpcFactor = (int)listingStandard.Slider((int)SpcFactor, lowerlimit, upperlimit);
+            listingStandard.Gap(gap);
+            listingStandard.Label("FengShui.BtyFactor".Translate() + "  " + (int)BtyFactor);
+            BtyFactor = (int)listingStandard.Slider((int)BtyFactor, lowerlimit, upperlimit);
+            listingStandard.Gap(gap);
+            listingStandard.Label("FengShui.ClnFactor".Translate() + "  " + (int)ClnFactor);
+            ClnFactor = (int)listingStandard.Slider((int)ClnFactor, lowerlimit, upperlimit);
+            listingStandard.Gap(gap);
             Text.Font = GameFont.Tiny;
-            listing_Standard.Label("          " + "FengShui.Tip".Translate());
+            listingStandard.Label("          " + "FengShui.Tip".Translate());
             Text.Font = GameFont.Small;
-            listing_Standard.Gap(gap);
-            if (listing_Standard.ButtonTextLabeled("FengShui.ResetDefaults".Translate(),
+            listingStandard.Gap(gap);
+            if (listingStandard.ButtonTextLabeled("FengShui.ResetDefaults".Translate(),
                     "FengShui.Reset".Translate()))
             {
                 doReset();
             }
 
-            if (Controller.currentVersion != null)
+            if (Controller.CurrentVersion != null)
             {
-                listing_Standard.Gap();
+                listingStandard.Gap();
                 GUI.contentColor = Color.gray;
-                listing_Standard.Label("FengShui.CurrentModVersion".Translate(Controller.currentVersion));
+                listingStandard.Label("FengShui.CurrentModVersion".Translate(Controller.CurrentVersion));
                 GUI.contentColor = Color.white;
             }
 
-            listing_Standard.End();
+            listingStandard.End();
         }
     }
 
-    public static void doReset()
+    private static void doReset()
     {
         ImpFactor = 100f;
         WthFactor = 100f;
