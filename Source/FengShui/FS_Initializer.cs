@@ -60,7 +60,7 @@ internal static class FS_Initializer
                 {
                     foreach (var rsss in list)
                     {
-                        if (!(rsss.minScore > 0f) || factor == 100f)
+                        if (!(rsss.minScore > 0f) || factor.Equals(100f))
                         {
                             continue;
                         }
@@ -73,12 +73,11 @@ internal static class FS_Initializer
                 if (count > 0)
                 {
                     Log.Message(
-                        string.Concat(RSD.defName, " processed ", count.ToString(),
-                            " score values with a factor of ", (factor / 100f).ToStringPercent()));
+                        $"{RSD.defName} processed {count} score values with a factor of {(factor / 100f).ToStringPercent()}");
                 }
                 else
                 {
-                    Log.Message(RSD.defName + " remains unchanged.");
+                    Log.Message($"{RSD.defName} remains unchanged.");
                 }
             }
         }
